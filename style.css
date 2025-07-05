@@ -1,0 +1,309 @@
+/* Basic Reset and Body Styling */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background-color: #1a1a1a; /* Dark background */
+    color: #e0e0e0; /* Light text */
+    padding-top: 60px; /* Space for fixed header */
+}
+
+.container {
+    align-content: center;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styling */
+header {
+    background: #333;
+    color: #fff;
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    margin: 0;
+    padding: 0 1rem;
+    display: inline-block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-weight: 700;
+}
+
+header .tagline {
+    display: inline-block;
+    margin-left: 1rem;
+    font-size: 1.0rem;
+    color: #bff0ff;
+}
+
+header nav {
+    float: right;
+    margin-top: 0.5rem;
+}
+
+header ul {
+    padding: 0;
+    list-style: none;
+}
+
+header ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header nav a:hover {
+    color: #00b0ff; /* Accent color for hover */
+}
+
+/* Section Styling */
+section {
+    align-content: center;
+    padding: 2rem 0;
+    border-bottom: 1px solid #444;
+}
+
+section h2 {
+    text-align: center;
+    color: #00b0ff; /* Accent color for headings */
+    margin-bottom: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+#shorts #cameo h3 {
+    text-align: center;
+    color: #00b0ff; /* Accent color for headings */
+    margin-bottom: 1.5rem;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+/* About Section */
+#about h3 {
+    color: #00b0ff;
+    margin-top: 1.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li {
+    background: #444;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.skills-list li:hover {
+    color: rgb(38, 38, 38);
+    background: #36afff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 1.0rem;
+    font-weight: bolder;
+}
+
+/* Portfolio Section */
+.video-grid {
+    display: grid;
+    max-width: 90%;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.video-item {
+    background: #333;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+
+.video-item iframe {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    border-radius: 5px;
+}
+
+.video-item h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    color: #e0e0e0;
+    font-size: 1.2rem;
+}
+
+.video-item p {
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+/* Video Carousel Section */
+.carousel-container {
+  max-width:  75%;
+  display: flex;
+  background: #333;
+  padding: 30px;
+  border-radius: 20px;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  margin: auto;
+  margin-bottom: 40px;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 16px;
+  padding: 10px 0;
+}
+
+button.prevBtn,
+button.nextBtn {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 24px;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 2;
+  transition: background 0.3s;
+}
+
+button.prevBtn:hover,
+button.nextBtn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+@media (max-width: 600px) {
+  .carousel iframe {
+    width: 120px;
+    height: 213px;
+  }
+}
+
+ /* Overlay background */
+ .overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+  }
+
+  /* Modal video container */
+  .video-modal {
+    position: relative;
+    width: 80%;
+    max-width: 800px;
+    aspect-ratio: 16 / 9;
+    background: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+  .video-modal iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+  }
+
+  /* Close button */
+  .close-btn {
+    position: absolute;
+    top: -40px;
+    right: 0;
+    color: white;
+    font-size: 32px;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  /* Ensure click outside video closes modal */
+  .overlay-background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0; left: 0;
+  }
+
+  .overlay-content {
+    position: relative;
+    z-index: 1;
+  }
+
+/* Contact Section */
+#contact p a {
+    color: #00b0ff;
+    text-decoration: none;
+}
+
+#contact p a:hover {
+    text-decoration: underline;
+}
+
+#contact img {
+    margin-right: .3em;
+}
+
+/* Footer Styling */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+footer p {
+    margin: 0;
+    font-size: 0.9rem;
+    color: #b0b0b0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    header h1,
+    header .tagline {
+        display: block;
+        text-align: center;
+        margin: 0.5rem 0;
+    }
+
+    header nav {
+        float: none;
+        text-align: center;
+        margin-top: 1rem;
+    }
+
+    header ul li {
+        margin: 0 10px;
+    }
