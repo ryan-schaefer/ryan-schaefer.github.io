@@ -109,6 +109,11 @@ section h2 {
     
     /* Create a fade-out effect using a rectangular mask */
     
+    -webkit-mask-image:
+        linear-gradient(to top,    transparent 0%, #fff 20%, #fff 95%, transparent 100%),
+        linear-gradient(to right,  transparent 0%, #fff 20%, #fff 95%, transparent 100%),
+        linear-gradient(to bottom, transparent 0%, #fff 20%, #fff 95%, transparent 100%),
+        linear-gradient(to left,   transparent 0%, #fff 20%, #fff 95%, transparent 100%);
     mask-image: 
         linear-gradient(to top,    transparent 0%, #fff 20%, #fff 95%, transparent 100%),
         linear-gradient(to right,  transparent 0%, #fff 20%, #fff 95%, transparent 100%),
