@@ -19,3 +19,8 @@ document.querySelectorAll('.carousel-container').forEach(container => {
     });
   });
 });
+
+// Automatically add loading="lazy" to all iframes in carousels
+document.querySelectorAll('.carousel').forEach(iframe => {
+    iframe.setAttribute('loading', 'lazy');
+});
