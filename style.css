@@ -178,7 +178,6 @@ section h2 {
 
 /* Portfolio Section */
 
-
 .video-grid {
     display: grid;
     max-width: 90%;
@@ -266,10 +265,8 @@ button.nextBtn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-
-
  /* Overlay background */
- .overlay {
+.overlay {
     display: none;
     position: fixed;
     top: 0; left: 0;
@@ -281,7 +278,7 @@ button.nextBtn:hover {
   }
 
   /* Modal video container */
-  .video-modal {
+.video-modal {
     position: relative;
     width: 80%;
     max-width: 800px;
@@ -292,14 +289,14 @@ button.nextBtn:hover {
     box-shadow: 0 0 20px rgba(0,0,0,0.5);
   }
 
-  .video-modal iframe {
+.video-modal iframe {
     width: 100%;
     height: 100%;
     border: none;
   }
 
   /* Close button */
-  .close-btn {
+.close-btn {
     position: absolute;
     top: -40px;
     right: 0;
@@ -312,14 +309,14 @@ button.nextBtn:hover {
   }
 
   /* Ensure click outside video closes modal */
-  .overlay-background {
+.overlay-background {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0; left: 0;
   }
 
-  .overlay-content {
+.overlay-content {
     position: relative;
     z-index: 1;
   }
@@ -386,20 +383,9 @@ footer p {
 
 /* Responsive Design */
 @media (max-width: 1150px) {
-    .about-flex {
-    flex-direction: column;
-    gap: 20px;
-    }
-    
-    .about-text {
-    text-align: center;
-    display: inline-block;
-    padding: 10%;
-    }
-    .container {
+   .container {
         width: 100%;
-    }
-
+    } 
     header h1,
     header .tagline {
         display: block;
@@ -413,7 +399,22 @@ footer p {
         margin-top: 1rem;
     }
 
-        header ul li {
-            margin: 0 10px;
-        }
+    header ul li {
+        margin: 0 10px;
+    }
+    
+    .about-flex {
+    flex-direction: column;
+    gap: 20px;
+    }
+    
+    .profile-image {
+    margin-top: 80px;
+    }
+
+    .about-text {
+    text-align: center;
+    display: inline-block;
+    padding: 10%;
+    }
     }
