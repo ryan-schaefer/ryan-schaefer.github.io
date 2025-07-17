@@ -238,12 +238,7 @@ button.nextBtn:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-@media (max-width: 600px) {
-  .carousel iframe {
-    width: 120px;
-    height: 213px;
-  }
-}
+
 
  /* Overlay background */
  .overlay {
@@ -328,6 +323,23 @@ footer p {
     margin: 0;
     font-size: 0.9rem;
     color: #b0b0b0;
+}
+
+.resume-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: #fff;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.2s;
+}
+.resume-btn:hover {
+    background-color: #125ea2;
+}
+.resume-btn img {
+    vertical-align: middle;
 }
 
 /* Responsive Design */
