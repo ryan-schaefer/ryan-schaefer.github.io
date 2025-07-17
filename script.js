@@ -2,19 +2,21 @@ document.querySelectorAll('.carousel-container').forEach(container => {
   const carousel = container.querySelector('.carousel');
   const prevBtn = container.querySelector('.prevBtn');
   const nextBtn = container.querySelector('.nextBtn');
+  if (!carousel || !prevBtn || !nextBtn) return; // Ensure elements exist
 
-  const scrollAmount = 180;
+  let scrollAmount = 0;
+  const scrollStep = 300; // Adjust this value to change the scroll amount
 
   prevBtn.addEventListener('click', () => {
     carousel.scrollBy({
-      left: -scrollAmount,
+      left: -scrollStep,
       behavior: 'smooth'
     });
   });
 
   nextBtn.addEventListener('click', () => {
     carousel.scrollBy({
-      left: scrollAmount,
+      left: scrollStep,
       behavior: 'smooth'
     });
   });
@@ -46,7 +48,7 @@ document.querySelectorAll('.video').forEach(div => {
 
     div.innerHTML = ''; // Clear the div
     div.appendChild(iframe); // Add the iframe
-  }
+  });
 });
 
 
