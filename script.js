@@ -4,7 +4,6 @@ document.querySelectorAll('.carousel-container').forEach(container => {
   const nextBtn = container.querySelector('.nextBtn');
   if (!carousel || !prevBtn || !nextBtn) return; // Ensure elements exist
 
-  let scrollAmount = 0;
   const scrollStep = 300; // Adjust this value to change the scroll amount
 
   prevBtn.addEventListener('click', () => {
