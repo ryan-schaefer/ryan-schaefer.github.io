@@ -114,7 +114,6 @@ section h2 {
     box-shadow: 0 0 0 8px rgba(255,255,255,0.7);
     
     /* Create a fade-out effect using a rectangular mask */
-    
     -webkit-mask-image:
         linear-gradient(to top,    transparent 0%, #fff 20%, #fff 95%, transparent 100%),
         linear-gradient(to right,  transparent 0%, #fff 20%, #fff 95%, transparent 100%),
@@ -127,7 +126,6 @@ section h2 {
         linear-gradient(to left,   transparent 0%, #fff 20%, #fff 95%, transparent 100%);
     -webkit-mask-composite: intersect;
     mask-composite: intersect;
-    
 }
 
 .about-text {
@@ -186,6 +184,11 @@ section h2 {
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
     gap: 20px;
+}
+
+.video {
+    border-radius: 10px;
+    border-color: #fff;
 }
 
 .video-item {
@@ -308,7 +311,7 @@ button.nextBtn:hover {
     cursor: pointer;
   }
 
-  /* Ensure click outside video closes modal */
+/* Ensure click outside video closes modal */
 .overlay-background {
     position: absolute;
     width: 100%;
