@@ -251,6 +251,12 @@ section h2 {
   padding: 10px 0;
 }
 
+.carousel .video-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 button.prevBtn,
 button.nextBtn {
   background-color: rgba(0, 0, 0, 0.5);
