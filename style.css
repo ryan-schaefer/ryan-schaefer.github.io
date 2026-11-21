@@ -142,6 +142,10 @@ section h2 {
     margin-top: 1.5rem;
 }
 
+#about h2 {
+    text-align: left;
+}
+
 .skills-container {
     align-items: center;
     max-width: 80%;
